@@ -1,0 +1,16 @@
+secret_word  = "Vamben"
+guess = ""
+guess_count = 0
+guess_limit = 2
+out_of_guess = False
+
+while guess != secret_word and not(out_of_guess):
+    if guess_count <= guess_limit:
+        guess = input("Enter the secret word: ")
+        guess_count += 1
+    else:
+        out_of_guess = True
+if out_of_guess:
+    print("Out the guess chance, you lose!")
+else: 
+    print("Congratulations! You win!")
